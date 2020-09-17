@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
+
+/* Start declation const*/
+/* :root : {
+  --fc-bg-event-opacity : 0
+} */
+.m-0{
+  margin: 0;
+}
+.mr-0{
+  margin-right: 0;
+}
+.ml-0{
+  margin-left: 0;
+}
+.mb-0{
+  margin-bottom: 0;
+}
+.mt-0{
+  margin-top: 0;
+}
+/* .bg-gray{
+  background-color: gray;
+}  */
+
+.bg-gray {
+color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* .bg-light{
+  background-color: #FBFDFE ;
+}  */
+.bg-light {
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-gray{
+  background-color: #E5E5E5 ; 
 }
+/* End const declation */ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+
+margin: 0 auto; 
+overflow-x: hidden;
+background-color: #E5E5E5 ; 
+}
+*{
+  /* border : 1px solid red ; */
+}
+/* .App{
+
+} */
+
+/* Start Header  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  padding: 0 24px;
+}
+ .circle { 
+display: block;
+background:#E5E5E5 ;
+border-radius: 50%;
+height: 50px;
+width: 50px; 
+margin:  16px  ;
+ }
+
+ .profile {
+display: flex; 
+ }
+
+ .profile div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ }
+ /* .profile div ,  .profile div span {
+  display: block ; 
+ } */
+ .profile div span {
+  color: gray;
+ }
+/* End Header  */
+
+
+/* Start Nav  */ 
+nav{
+  text-align: center; 
+position: absolute;
+top: 17px;
+left: 115px;
+}
+ nav ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items:  flex-start ;
+  text-align: center; 
+  list-style: none ;
+  padding: 0;
+
+ }
+ul li:hover {
+  color: blue;
+}
+
+ul li { 
+  cursor: pointer;
+position: static;
+width: 119px;
+height: 21px;
+/* left: 585px; */
+top: 0px; 
+/* text-sm/Medium */
+
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%; 
+color: #48566A;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 5;
+align-self: center;
+ 
+} 
+
+ section { 
+position: absolute;
+left: 0px;
+top: 0px; 
+width: 100%;
+height: 328px;
+background: #FBFDFE; 
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+ 
+ }
+ .title-calender h3 {
+ width: 88px;
+ height: 30px;
+ left: 145px;
+ top: 132px;
+ font-weight: 600;
+ font-size: 20px;
+ color: #27303F;
+} 
+ /* Here is an overview of your calendar */
+.title-calender p {  
+  width: 277px;
+  height: 24px;
+  left: 145px;
+  top: 166px; 
+  /* margin-bottom: 138px ; */
+  font-weight: normal;
+  font-size: 16px; 
+  color: #48566A; 
+  }
+
+ .title-calender h3 , .title-calender p{  
+ position: absolute; 
+ font-family: Inter;
+ font-style: normal; 
+ line-height: 150%; 
+ margin: 0;
+} 
+/* End  Nav  */ 
+
+/* Start Upcoming Events  */ 
+main{
+  position: relative;    
+  /* background: #E5E5E5;  */
+  border: 1px solid #F1F5F9; 
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.UpEvents{
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px 10px 10px;
+} 
+.UpEvents > h3{  
+  width: 153px;
+  height: 27px;
+  left: 0px;
+  top: 0px; 
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%; 
+  color: #48566A; 
+}
+
+.UpEvents > div{
+  display: flex;
+  justify-content: flex-start; 
+  
+}
+.UpEvent{ 
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+padding: 10px 20px; 
+background: #FBFDFE; 
+box-sizing: border-box;
+border-radius: 4px;
+min-width: 253px;
+min-height: 208px;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+color: #27303F;
+margin: 0;
+}
+
+/* .UpEvent , .UpEvent-time, .UpEvent-place {
+  flex-direction: column;
+  color: #27303F;
+} */
+.UpEvent-time{
+  color: blue;
+}
+  
+.container {
+  padding: 15px 24px 0;
+}
+/* End Upcoming Events  */ 
+
+
+/* Start FullCalendar  */ 
+.title-calendar{
+
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 150%;
+padding-left:24px ;
+color: #48566A;
+}
+.fc-scroller{
+overflow:  hidden !important ;
+}
+  .fc .fc-button-primary ,   .fc  .fc-button-primary:hover{
+    border-color:  #FBFDFE !important ;
+    background-color:  transparent  !important ;
+ 
+  color: black   !important ;
+}
+ 
+
+.fc-header-toolbar ,  thead{
+  background: #FBFDFE;
+  margin-bottom: 0 !important  ;
+  padding: 2px;
+}
+.fc-header-toolbar{
+  font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+padding: 11px 0 9px 0;
+  display: flex; 
+justify-content: center !important;
+}
+ 
+.fc-theme-standard {
+  /* background-color: white; */
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid #E1E7EF;
+
+}
+.UpEvent-Calender{  
+  position: absolute;
+  top: 226px;
+  left: 145px ;
+  background-color: white;
+    padding: 10px 0 0;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1150px;
+    max-height: 1571px ;
+  }
+
+.fc-daygrid-day-top{
+
+  color : #E5E5E5 ; 
+  float: left;
+
+}
+/* .fc-bg-event fc-event{
   color: white;
-}
+} */
+.fc .fc-bg-event{
+  color : #E5E5E5 !important ; 
 
-.App-link {
-  color: #61dafb;
+opacity: 1 !important ;
+  opacity: var(--fc-bg-event-opacity, 1 )    ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fc-event-title{
+  font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+margin: 40px 5px !important ;
+text-align: center;
 }
+.fc-daygrid-day-frame .fc-h-event {
+  /* background-color: red; */
+  color: antiquewhite;
+} 
+/* End FullCalendar  */ 

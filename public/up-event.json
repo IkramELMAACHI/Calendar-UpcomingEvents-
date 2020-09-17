@@ -1,0 +1,77 @@
+[
+    {
+    "title": "Meeting One to One",
+    "color": "#219653",
+    "display": "background",
+    "day": "numeric" ,
+    "startRecur" : "2020-10-22",
+    "endRecur" : "2020-09-23",
+    "startTime" : "10:45:00" ,
+    "endTime" : "12:45:00" ,
+    "place" : "@ LaStartupFactory Office"
+  },
+
+  {
+    "title": "Meeting One to One",
+    "color": "#219653",
+    "display": "background",
+    "day": "numeric"  ,
+    "startRecur" : "2020-09-22",
+    "endRecur" : "2020-09-23",
+    "start": "10:00" ,  
+    "end":   "20:00" ,
+    "place" : "@ LaStartupFactory Office"
+
+  },
+  {
+    "title": "Match & Invest", 
+    "color": " #828282",
+    "display": "background",
+    "day": "numeric", 
+    "startRecur" : "2020-09-11" ,
+    "endRecur" : "2020-09-12" ,
+    "start": "10:00" ,  
+    "end":   "20:00" ,
+    "place" : "@ LaStartupFactory Office"
+
+  },
+  {
+    "title": "Startup School Meetup", 
+    "color": "#2D9CDB",
+    "display": "background",
+    "day": "numeric",
+    "startRecur" : "2020-09-14",
+    "endRecur" : "2020-09-16",
+    "start": "10:00" ,  
+    "end":   "20:00" ,
+    "place" : "@ LaStartupFactory Office"
+
+
+  } 
+  ,
+  {
+    "title": " Scalerator - Meeting ", 
+    "color": "#9B51E0",
+    "display": "background",
+    "day": "numeric",
+    "start": "10:00" ,  
+    "end":   "20:00" ,
+    "startRecur" : "2020-10-18",
+    "endRecur" : "2020-09-19",
+    "place" : "@ LaStartupFactory Office"
+  }
+  ,
+  {
+    "title": " Scalerator - Meeting ",
+    "color": "#F2994A",
+    "display": "background",
+    "day": "numeric"    ,
+    "startRecur" : "2020-09-22",
+    "endRecur" : "2020-09-23",
+    "start": "10:00" ,  
+    "end":   "20:00" ,
+    "place" : "@ LaStartupFactory Office"
+
+  }
+  
+]

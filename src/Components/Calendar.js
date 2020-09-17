@@ -1,12 +1,24 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactDOM from 'react-dom';
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import calendarPlugins from '@fullcalendar/google-calendar'
-import ListesEvents from '../ListesEvents.json'
+ 
 export default function Calendar() {
+  const [ListesEvents, setListesEvents] = useState([])
+  useEffect(() => {
+    fetch('/up-event.json').then((res)=>{
+      
+    return res.json() 
+    
+    }).then((data)=>{
+        setListesEvents(data)
+    console.log(data);
+    }
+    )  
+    }, [])
     return (
         <div className = 'calendar' >
                     <h3 className = 'title-calendar'> My Calendar </h3>

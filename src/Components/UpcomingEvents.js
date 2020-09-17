@@ -18,8 +18,7 @@ const monthNames = [
    }
    
    
- }
-// document.write("The current month is " + monthNames[date.getMonth()]);
+ } 
 useEffect(() => {
 fetch('/up-event.json').then((res)=>{
   
